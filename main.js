@@ -3,7 +3,7 @@ const btn = document.getElementById("toggle");
 const box = document.getElementById("box");
 
 // audio assets
-const S = 'public/audio_assets/';
+const S = '/audio_assets/';
 const good_sound = new Audio(`${S}ding.mp3`);
 const bad_sound = new Audio(`${S}swoosh.mp3`);
 const Roulette_sound = new Audio(`${S}roleta.mp3`);
@@ -65,7 +65,7 @@ function displayRouletteResult() {
 function setupHighLow() {
   let highScore = 0;
   let number = Math.floor(Math.random() * 52) + 1; // Random card
-  let Shapes = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+  let Shapes = ['hearts', 'diamonds', 'clubs', 'spades'];
   let shape = Shapes[Math.floor((number - 1) / 13)];
   let cardNumber = ((number - 1) % 13) + 1;
 
