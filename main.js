@@ -3,10 +3,10 @@ const btn = document.getElementById("toggle");
 const box = document.getElementById("box");
 
 // audio assets
-const good_sound = new Audio(encodeURI('/audio_assets/ding.mp3'));
-const bad_sound = new Audio(encodeURI('/audio_assets/swoosh.mp3'));
-const Roulette_sound = new Audio(encodeURI('/audio_assets/roleta.mp3'));
-const Roulette_victory_sound = new Audio(encodeURI('/audio_assets/roleta_victory.mp3'))
+const good_sound = new Audio(encodeURI('public/audio_assets/ding.mp3'));
+const bad_sound = new Audio(encodeURI('public/audio_assets/swoosh.mp3'));
+const Roulette_sound = new Audio(encodeURI('public/audio_assets/roleta.mp3'));
+const Roulette_victory_sound = new Audio(encodeURI('public/audio_assets/roleta_victory.mp3'));
 
 // Games setup and logic
 // roulette game
@@ -69,7 +69,7 @@ function setupHighLow() {
 
   const cardImg = document.querySelector("#card-image");
   if (cardImg) {
-    cardImg.src = `/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
   }
   console.log("Starting number is " + number);
 
@@ -86,7 +86,7 @@ function setupHighLow() {
     number = newNumber;
     shape = Shapes[Math.floor((number - 1) / 13)];
     cardNumber = ((number - 1) % 13) + 1;
-    if (cardImg) cardImg.src = `/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
 
     const scoreEl = document.querySelector("#score");
     const highScoreEl = document.querySelector("#high-score");
@@ -117,7 +117,7 @@ function setupHighLow() {
     number = newNumber;
     shape = Shapes[Math.floor((number - 1) / 13)];
     cardNumber = ((number - 1) % 13) + 1;
-    if (cardImg) cardImg.src = `/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
 
     const scoreEl = document.querySelector("#score");
     const highScoreEl = document.querySelector("#high-score");
