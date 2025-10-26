@@ -71,7 +71,7 @@ function setupHighLow() {
 
   const cardImg = document.querySelector("#card-image");
   if (cardImg) {
-    cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.png`;
   }
   console.log("Starting number is " + number);
 
@@ -88,7 +88,7 @@ function setupHighLow() {
     number = newNumber;
     shape = Shapes[Math.floor((number - 1) / 13)];
     cardNumber = ((number - 1) % 13) + 1;
-    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.png`;
 
     const scoreEl = document.querySelector("#score");
     const highScoreEl = document.querySelector("#high-score");
@@ -119,7 +119,7 @@ function setupHighLow() {
     number = newNumber;
     shape = Shapes[Math.floor((number - 1) / 13)];
     cardNumber = ((number - 1) % 13) + 1;
-    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.svg`;
+    if (cardImg) cardImg.src = `public/Image_assets/card images/card-${cardNumber}-${shape}.png`;
 
     const scoreEl = document.querySelector("#score");
     const highScoreEl = document.querySelector("#high-score");
