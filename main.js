@@ -3,10 +3,12 @@ const btn = document.getElementById("toggle");
 const box = document.getElementById("box");
 
 // audio assets
-const good_sound = new Audio(encodeURI('public/audio_assets/ding.mp3'));
-const bad_sound = new Audio(encodeURI('public/audio_assets/swoosh.mp3'));
-const Roulette_sound = new Audio(encodeURI('public/audio_assets/roleta.mp3'));
-const Roulette_victory_sound = new Audio(encodeURI('public/audio_assets/roleta_victory.mp3'));
+const S = 'public/audio_assets/';
+const good_sound = new Audio(`${S}ding.mp3`);
+const bad_sound = new Audio(`${S}swoosh.mp3`);
+const Roulette_sound = new Audio(`${S}roleta.mp3`);
+const Roulette_victory_sound = new Audio(`${S}roleta_victory.mp3`);
+
 
 // Games setup and logic
 // roulette game
