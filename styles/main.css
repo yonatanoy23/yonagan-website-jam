@@ -27,9 +27,14 @@ h1{
   padding: 1rem;
   text-align: center;
 }
+#box{
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 5px 5px;
+}
 .box {
   width: 100px;
-  height: 100px;
+  height: 80px;
   align-self: center;
   background: tomato;
   opacity: 1;
@@ -56,7 +61,9 @@ body {
 main {
   padding: 2rem;
 }
-
+header h1{
+  margin-top: 8rem;
+}
 header {
   padding: 1rem;
   text-align: center;
