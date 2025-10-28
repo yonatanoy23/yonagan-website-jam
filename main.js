@@ -73,7 +73,6 @@ function setupHighLow() {
   if (cardImg) {
     cardImg.src = `/Image_assets/card images/card-${cardNumber}-${shape}.png`;
   }
-  console.log("Starting number is " + number);
 
   function guessHigh() {
     let won = false;
