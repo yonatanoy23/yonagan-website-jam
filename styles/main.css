@@ -21,6 +21,9 @@
   --font-titles: "BBH Sans Hegarty", sans-serif;
   --font-body: "BBH Sans Hegarty", sans-serif; /* system-ui matches the user's system font */
 }
+#main-title{
+  padding-top: 5rem;
+}
 h1{
   font-family: var(--font-titles);
   color: var(--color-accent);
@@ -62,7 +65,7 @@ main {
   padding: 2rem;
 }
 #roulette-room-title {
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 header {
   padding: 1rem;
