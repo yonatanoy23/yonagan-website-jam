@@ -20,15 +20,14 @@
 
   --font-titles: "BBH Sans Hegarty", sans-serif;
   --font-body: "BBH Sans Hegarty", sans-serif; /* system-ui matches the user's system font */
-}
-#main-title{
-  padding-top: 5rem;
-}
+}    
 h1{
   font-family: var(--font-titles);
   color: var(--color-accent);
   padding: 1rem;
   text-align: center;
+  padding-top: 8rem;
+  font-size: 3rem;
 }
 #box{
   margin-bottom: 2rem;
@@ -53,6 +52,7 @@ body {
   flex-direction: column;   
   justify-content: center;  
   align-items: center;   
+  padding-bottom: 1rem;
   height: 100vh;            
   margin: 0;
   color: var(--color-primary);
@@ -65,7 +65,7 @@ main {
   padding: 2rem;
 }
 #roulette-room-title {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 header {
   padding: 1rem;
